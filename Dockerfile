@@ -64,4 +64,4 @@ ADD netgen.sh /usr/local/bin/netgen
 ADD motd /etc/motd
 ADD profile  /etc/profile
 
-CMD ["/bin/bash","-l"]
+ENTRYPOINT ["/bin/ping", "127.0.0.1"]
